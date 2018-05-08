@@ -1,0 +1,2 @@
+li { float:left; padding:5px; }
+li:last-child { float:right; }
