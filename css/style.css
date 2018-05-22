@@ -1,2 +1,31 @@
-li { float:left; padding:5px; }
-li:last-child { float:right; }
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+  }
+
+.fa-linkedin {
+    background: white;
+    color: #007bb5;
+    font-size: 3em;
+  }
+
+.fa-github {
+    background: white;
+    color: black;
+    font-size: 3em;
+  }
+
+.fa-gamepad {
+    background: white;
+    color: black;
+  }
+
+.fa-keyboard {
+    background: white;
+    color: black;
+  }
