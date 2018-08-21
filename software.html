@@ -6,7 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="../../../../favicon.ico">
+    
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="img/favicons/site.webmanifest">
+    <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#006ded">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 
     <title>Ryan Blakeman</title>
 
@@ -69,7 +77,7 @@
         <section class="jumbotron text-center">
             <div class="container">
                 <h1 class="jumbotron-heading">Software Projects</h1>
-                <p class="lead text-muted">[placeholder]</p>
+                <!--<p class="lead text-muted">[placeholder]</p>-->
                 <p>
                 <!--<a href="#" class="btn btn-primary my-2">Main call to action</a>-->
                 <!--<a href="https://sites.google.com/csumb.edu/vxgi" class="btn btn-secondary my-2">Original Website</a>-->
@@ -98,8 +106,18 @@
                         Created with Android Studio and applied Java focused design skills
                     </p>
                 </div>
-                <div class="col-md-5">
-                    <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+                <div class="col-md-5 text-center">
+                    <img class="featurette-image img-fluid mx-auto android-toggle" id="home" src="img/software/android/home_screen.png" alt="Home Screen">
+                    <img class="featurette-image img-fluid mx-auto android-toggle" id="create_success" src="img/software/android/create_account_success.png" alt="Screen" style="display:none;">
+                    <img class="featurette-image img-fluid mx-auto android-toggle" id="create_fail" src="img/software/android/create_account_fail.png" alt="Screen" style="display:none;">
+                    <img class="featurette-image img-fluid mx-auto android-toggle" id="reserve" src="img/software/android/reserve.png" alt="Screen" style="display:none;">
+                    <img class="featurette-image img-fluid mx-auto android-toggle" id="cancel" src="img/software/android/cancel_reservation.png" alt="Screen" style="display:none;">
+                    <hr>
+                    <button type="button" class="btn btn-sm btn-outline-secondary android-toggler" data-android-id="#home">Home</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary android-toggler" data-android-id="#create_success">Create Account</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary android-toggler" data-android-id="#create_fail">Create Account (fail)</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary android-toggler" data-android-id="#reserve">Reserve</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary android-toggler" data-android-id="#cancel">Cancel Reservation</button>
                 </div>
             </div>
 
@@ -116,8 +134,14 @@
                         Developed using Microcontroller, ultrasonic sensor, and solar panel
                     </p>
                 </div>
-                <div class="col-md-5 order-md-1">
-                    <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+                <div class="col-md-5 text-center">
+                    <img class="featurette-image img-fluid mx-auto iot-toggle" id="top" src="img/software/clamshell/top_view.jpg" alt="Iot Top View">
+                    <img class="featurette-image img-fluid mx-auto iot-toggle" id="bottom" src="img/software/clamshell/bottom_view.jpg" alt="Iot Bottom View" style="display:none;">
+                    <img class="featurette-image img-fluid mx-auto iot-toggle" id="diagram" src="img/software/clamshell/process_diagram.png" alt="Iot Process Diagram" style="display:none;">
+                    <hr>
+                    <button type="button" class="btn btn-sm btn-outline-secondary iot-toggler" data-iot-id="#top">Top</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary iot-toggler" data-iot-id="#bottom">Bottom</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary iot-toggler" data-iot-id="#diagram">Diagram</button>
                 </div>
             </div>
 
@@ -130,11 +154,17 @@
                         <span class="text-muted">C++ Console Window Program</span>
                     </h2>
                     <p class="lead">Original chess game written in C++ using the console window for input/output.
-                        First programming project for a lower level University class
+                        First programming project for a lower level University class.
+                        Although I consider this a software project, it kickstarted my passion for game programming.
                     </p>
                 </div>
-                <div class="col-md-5">
-                    <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+                <div class="col-md-5 text-center">
+                    <img class="featurette-image img-fluid mx-auto chess-toggle" id="start" src="img/software/chess/chess_start.png" alt="Chess Screenshots">
+                    <img class="featurette-image img-fluid mx-auto chess-toggle" id="middle" src="img/software/chess/chess_middle.png" alt="Chess Screenshots" style="display:none;">
+                    <img class="featurette-image img-fluid mx-auto chess-toggle" id="end" src="img/software/chess/chess_gameover.png" alt="Chess Screenshots" style="display:none;">
+                    <button type="button" class="btn btn-sm btn-outline-secondary chess-toggler" data-chess-id="#start">Start</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary chess-toggler" data-chess-id="#middle">During</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary chess-toggler" data-chess-id="#end">Game-Over</button>
                 </div>
             </div>
 
@@ -169,6 +199,24 @@
     <script src="../../../../dist/js/bootstrap.min.js"></script>
     <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
     <script src="../../../../assets/js/vendor/holder.min.js"></script>
+    <script>
+        $('.android-toggler').click(function(){
+            $('.android-toggle').hide();
+            $($(this).attr('data-android-id')).show();
+        })
+    </script>
+    <script>
+        $('.iot-toggler').click(function(){
+            $('.iot-toggle').hide();
+            $($(this).attr('data-iot-id')).show();
+        })
+    </script>
+    <script>
+        $('.chess-toggler').click(function(){
+            $('.chess-toggle').hide();
+            $($(this).attr('data-chess-id')).show();
+        })
+    </script>
 </body>
 
 </html>
