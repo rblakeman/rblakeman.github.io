@@ -38,3 +38,7 @@
     text-align: center;
     background-color: #0275d8;
   }
+
+.text-muted {
+  font-size: .75em;
+}
