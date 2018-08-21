@@ -6,9 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="../../../../favicon.ico">
+    
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="img/favicons/site.webmanifest">
+    <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#006ded">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 
-    <title>Ryan Blakeman</title>
+    <title>Resume</title>
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
@@ -74,29 +82,26 @@
         
         <!-- Three columns of text below the carousel -->
         <div class="row">
-            <div class="col-lg-4">
+            <div class="col-lg-12 text-center">
                 <!-- <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image"
                     width="140" height="140"> -->
-                <i class="fas fa-gamepad"></i>
-                <h2>Game Development Resume</h2>
+                <h2>Resumes</h2>
                 <p>
                     <!-- Document Link -->
-                    <a class="btn btn-secondary" href="https://drive.google.com/open?id=144XS1ex37gSW3SJ-7FPD1XlWZ-oBRCcW" role="button">View Resume &raquo;</a>
-                    
+                    <button type="button" class="btn btn-secondary resume-toggler" data-resume-id="#g-resume">Game Resume</button>
+                    <button type="button" class="btn btn-secondary resume-toggler" data-resume-id="#s-resume">Software Resume</button>
+                    <p>
+                        <a class="resume-toggle" id="g-resume">
+                            <i class="fas fa-gamepad"></i>
+                            <iframe src="https://drive.google.com/file/d/144XS1ex37gSW3SJ-7FPD1XlWZ-oBRCcW/preview" width="100%" height="920"></iframe>
+                        </a>
+                        <a class="resume-toggle" id="s-resume" style="display:none;">
+                            <i class="far fa-keyboard"></i>
+                            <iframe src="https://drive.google.com/file/d/1lGmm72pw18xBkF5BZ1tDzC5WI5kLVihm/preview" width="100%" height="920"></iframe>
+                        </a>
+                    </p>
                 </p>
             </div>
-            <!-- /.col-lg-4 -->
-            <div class="col-lg-4">
-                <!-- <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image"
-                    width="140" height="140"> -->
-                <i class="far fa-keyboard"></i>
-                <h2>Software Development Resume</h2>
-                <p>
-                    <!-- Document Link -->
-                    <a class="btn btn-secondary" href="https://drive.google.com/open?id=1lGmm72pw18xBkF5BZ1tDzC5WI5kLVihm" role="button">View Resume &raquo;</a>
-                </p>
-            </div>
-            <!-- /.col-lg-4 -->
         </div>
         <!-- /.row -->
 
@@ -121,13 +126,16 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
     <script src="../../../../assets/js/vendor/popper.min.js"></script>
     <script src="../../../../dist/js/bootstrap.min.js"></script>
-    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
     <script src="../../../../assets/js/vendor/holder.min.js"></script>
-</body>
-
+    <script>
+        $('.resume-toggler').click(function(){
+            $('.resume-toggle').hide();
+            $($(this).attr('data-resume-id')).show();
+        })
+    </script>
+  </body>
 </html>
