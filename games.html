@@ -6,7 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="../../../../favicon.ico">
+    
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="img/favicons/site.webmanifest">
+    <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#006ded">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 
     <title>Ryan Blakeman</title>
 
@@ -69,7 +77,7 @@
         <section class="jumbotron text-center">
             <div class="container">
                 <h1 class="jumbotron-heading">Game Projects</h1>
-                <p class="lead text-muted">[placeholder]</p>
+                <!--<p class="lead text-muted">[placeholder]</p>-->
                 <p>
                 <!--<a href="#" class="btn btn-primary my-2">Main call to action</a>-->
                 <!--<a href="https://sites.google.com/csumb.edu/vxgi" class="btn btn-secondary my-2">Original Website</a>-->
@@ -85,9 +93,7 @@
 
             <!-- START THE FEATURETTES -->
 
-            <!--<hr class="featurette-divider">-->
-
-            <div class="row featurette">
+            <div class="open-ocean-vr row featurette">
                 <div class="col-md-7">
                     <h2 class="featurette-heading">Open Ocean VR
                         <br>
@@ -100,13 +106,25 @@
                     </p>
                 </div>
                 <div class="col-md-5">
-                    <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+                    <img class="featurette-image img-fluid mx-auto" src="img/games/open-ocean-vr/Moli_Hello_jellygif.gif" alt="Screenshot Coming Soon">
+                    <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Screenshots Coming Soon">
+                </div>
+                
+                <div class="text-center">
+                    <div class="featurette-image ocean-toggle" id="poster">
+                        <img class="featurette-image img-fluid mx-auto ocean-poster" src="img/games/open-ocean-vr/OpenOceanVRPosterFinal.png" alt="Open Ocean VR Poster">
+                    </div>
+                    <div class="embed-responsive embed-responsive-16by9 ocean-toggle" id="presentation" style="width:400%; display:none;">
+                        <iframe class="embed-responsive-item"  src="https://www.youtube.com/embed/t73Ghh6quj8?rel=0" allowfullscreen></iframe>
+                    </div>
+                    <button type="button" class="btn btn-sm btn-outline-secondary ocean-toggler" data-ocean-id="#poster">Poster</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary ocean-toggler" data-ocean-id="#presentation">Presentation</button>
                 </div>
             </div>
 
             <hr class="featurette-divider">
 
-            <div class="row featurette">
+            <div class="royal-game-of-ur row featurette">
                 <div class="col-md-7">
                     <h2 class="featurette-heading">Royal Game of Ur
                         <br>
@@ -118,15 +136,18 @@
                         AI opponent powered by a Min-Max Decision Tree and animated using Inverse Kinematics.
                     </p>
                 </div>
-                <div class="col-md-5 order-md-1">
-                    <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+                <div class="col-md-5">
+                    <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Screenshot Coming Soon">
+                </div>
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" style="padding:3%;" src="https://www.youtube.com/embed/0i5dbWtMu_Y" allowfullscreen></iframe>
                 </div>
             </div>
 
             <hr class="featurette-divider">
 
-            <div class="row featurette">
-                <div class="col-md-7">
+            <div class="enkindle row featurette">
+                <div class="col-md-8">
                     <h2 class="featurette-heading">Enkindle
                         <br>
                         <span class="text-muted">3D Video Game</span>
@@ -136,8 +157,8 @@
                         Implemented mesh deformation as a tool for Unity’s built-in Terrain system.
                     </p>
                 </div>
-                <div class="col-md-5">
-                    <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+                <div class="col-md-8">
+                    <img class="featurette-image img-fluid mx-auto" src="img/games/enkindle/phoenix_screenshot.PNG" alt="Enkindle Screenshot">
                 </div>
             </div>
 
@@ -172,6 +193,12 @@
     <script src="../../../../dist/js/bootstrap.min.js"></script>
     <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
     <script src="../../../../assets/js/vendor/holder.min.js"></script>
+    <script>
+        $('.ocean-toggler').click(function(){
+            $('.ocean-toggle').hide();
+            $($(this).attr('data-ocean-id')).show();
+        })
+    </script>
 </body>
 
 </html>
