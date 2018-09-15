@@ -93,6 +93,31 @@
 
             <div class="row featurette">
                 <div class="col-md-7">
+                    <h2 class="featurette-heading">React-Redux Projects
+                        <br>
+                        <span class="text-muted">ReactJS</span>
+                    </h2>
+                    <p class="lead">
+                        Handful of Full-Stack projects from online course
+                        <ul>
+                            <li>Weather Forecast App</li>
+                            <li>YouTube Search and Viewer App</li>
+                        </ul>
+                    </p>
+                </div>
+                <div class="col-md-5 text-center react-screenshots">
+                    <img class="featurette-image img-fluid mx-auto react-toggle" id="weather" src="img/software/react/weather.png" alt="Weather">
+                    <img class="featurette-image img-fluid mx-auto react-toggle" id="youtube" src="img/software/react/youtube.png" alt="YouTube" style="display:none;">
+                    <hr>
+                    <button type="button" class="btn btn-sm btn-outline-secondary react-toggler" data-react-id="#weather">Weather</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary react-toggler" data-react-id="#youtube">YouTube</button>
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+            
+            <div class="row featurette">
+                <div class="col-md-7">
                     <h2 class="featurette-heading">Web Development Catalog
                         <br>
                         <span class="text-muted">HTML, PHP, JS, CSS</span>
@@ -208,7 +233,7 @@
             <p>&copy; 2018 Ryan Blakeman &middot;
                 <a href="mailto:rblakeman31@gmail.com">Email</a> &middot;
                 <a href="https://www.linkedin.com/in/rblakeman/">LinkedIn</a>
-            <br>Style by Bootstrap</br>
+            <br>Style by Bootstrap
             </p>
         </footer>
     </main>
@@ -223,6 +248,12 @@
     <script src="../../../../dist/js/bootstrap.min.js"></script>
     <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
     <script src="../../../../assets/js/vendor/holder.min.js"></script>
+    <script>
+        $('.react-toggler').click(function(){
+            $('.react-toggle').hide();
+            $($(this).attr('data-react-id')).show();
+        })
+    </script>
     <script>
         $('.web-toggler').click(function(){
             $('.web-toggle').hide();
