@@ -196,29 +196,6 @@
 
             <hr class="featurette-divider">
 
-            <div class="row featurette">
-                <div class="col-md-7">
-                    <h2 class="featurette-heading">Chess
-                        <br>
-                        <span class="text-muted">C++ Console Window Program</span>
-                    </h2>
-                    <p class="lead">Original chess game written in C++ using the console window for input/output.
-                        First programming project for a lower level University class.
-                        Although I consider this a software project, it kickstarted my passion for game programming.
-                    </p>
-                </div>
-                <div class="col-md-5 text-center">
-                    <img class="featurette-image img-fluid mx-auto chess-toggle" id="start" src="img/software/chess/chess_start.png" alt="Chess Screenshots">
-                    <img class="featurette-image img-fluid mx-auto chess-toggle" id="middle" src="img/software/chess/chess_middle.png" alt="Chess Screenshots" style="display:none;">
-                    <img class="featurette-image img-fluid mx-auto chess-toggle" id="end" src="img/software/chess/chess_gameover.png" alt="Chess Screenshots" style="display:none;">
-                    <button type="button" class="btn btn-sm btn-outline-secondary chess-toggler" data-chess-id="#start">Start</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary chess-toggler" data-chess-id="#middle">During</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary chess-toggler" data-chess-id="#end">Game-Over</button>
-                </div>
-            </div>
-
-            <hr class="featurette-divider">
-
             <!-- /END THE FEATURETTES -->
 
         </div>
@@ -270,12 +247,6 @@
         $('.iot-toggler').click(function(){
             $('.iot-toggle').hide();
             $($(this).attr('data-iot-id')).show();
-        })
-    </script>
-    <script>
-        $('.chess-toggler').click(function(){
-            $('.chess-toggle').hide();
-            $($(this).attr('data-chess-id')).show();
         })
     </script>
 </body>

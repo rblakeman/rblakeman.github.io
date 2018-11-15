@@ -90,29 +90,27 @@
             <!-- START THE FEATURETTES -->
 
             <div class="open-ocean-vr row featurette" id="open-ocean-vr">
-                <div class="col-md-7">
+                <div class="col-md-6">
                     <h2 class="featurette-heading">Open Ocean VR
                         <br>
-                        <span class="text-muted">Virtual Reality Video Game</span>
+                        <span class="text-muted">Virtual Reality Interactive Experience</span>
                     </h2>
                     <p class="lead">Capstone Project and Presentation for Senior Semester at University.
-                        Virtual Reality game designed for Oculus Rift using Unity Game Engine and C#.
+                        Virtual Reality game designed for Oculus Rift using Unity3D Game Engine and C#.
                         Player assumes role of deep-sea diver to interact and learn about the aquatic life around them.
-                        Created Game Event system to allow game designers to create quests using simple interface.
+                        Created Dynamic Event system to allow Game Designers to create quests using an intuitive interface.
                     </p>
                 </div>
-                <div class="col-md-5">
-                    <img class="featurette-image img-fluid mx-auto" src="img/games/open-ocean-vr/Moli_Hello_jellygif.gif" alt="Screenshot Coming Soon">
-                    <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Screenshots Coming Soon">
-                </div>
-                
-                <div class="text-center">
-                    <div class="featurette-image ocean-toggle" id="poster">
+                <div class="col-md-6 text-center ocean-screenshots">
+                    <img class="featurette-image img-fluid mx-auto ocean-toggle" id="gif" src="img/games/open-ocean-vr/Moli_Hello_jellygif.gif" alt="Screenshot Coming Soon">
+                    <div class="featurette-image ocean-toggle" id="poster" style="display:none;">
                         <img class="featurette-image img-fluid mx-auto ocean-poster" src="img/games/open-ocean-vr/OpenOceanVRPosterFinal.png" alt="Open Ocean VR Poster">
                     </div>
-                    <div class="embed-responsive embed-responsive-16by9 ocean-toggle" id="presentation" style="width:400%; display:none;">
+                    <div class="embed-responsive embed-responsive-16by9 ocean-toggle" id="presentation" style="display:none">
                         <iframe class="embed-responsive-item"  src="https://www.youtube.com/embed/t73Ghh6quj8?rel=0" allowfullscreen></iframe>
-                    </div>
+                    </div> 
+                    <hr>
+                    <button type="button" class="btn btn-sm btn-outline-secondary ocean-toggler" data-ocean-id="#gif">Mola Mola</button>
                     <button type="button" class="btn btn-sm btn-outline-secondary ocean-toggler" data-ocean-id="#poster">Poster</button>
                     <button type="button" class="btn btn-sm btn-outline-secondary ocean-toggler" data-ocean-id="#presentation">Presentation</button>
                 </div>
@@ -121,41 +119,75 @@
             <hr class="featurette-divider">
 
             <div class="royal-game-of-ur row featurette">
-                <div class="col-md-7">
+                <div class="col-md-6">
                     <h2 class="featurette-heading">Royal Game of Ur
                         <br>
                         <span class="text-muted">Mixed Reality Video Game</span>
                     </h2>
-                    <p class="lead">HCI Research Project under Mentor and Professor Krzysztof Pietroszek.
-                        Mixed-Reality interaction using a hand tracking Leap-motion sensor mounted on HMD.
-                        Programmed to allow player to use their bare hands to move pieces and play against competitor.
+                    <p class="lead">Human-Computer Interaction Research Project under Mentor Dr. Krzysztof Pietroszek.
+                        Mixed-Reality interaction using a 3D spatial hand-tracking Leap sensor mounted on HMD.
+                        Implemented a solution in Unity3D to allow player to use their hands to move pieces and play against competitor.
                         AI opponent powered by a Min-Max Decision Tree and animated using Inverse Kinematics.
                     </p>
                 </div>
-                <div class="col-md-5">
-                    <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Screenshot Coming Soon">
-                </div>
-                <div class="embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item" style="padding:3%;" src="https://www.youtube.com/embed/0i5dbWtMu_Y" allowfullscreen></iframe>
+                <div class="col-md-6 text-center ur-screenshots">
+                    <img class="featurette-image img-fluid mx-auto ur-toggle" id="invalid" src="img/games/royal-game-of-ur/invalid_move.png" alt="Invalid Move Screenshot">
+                    <img class="featurette-image img-fluid mx-auto ur-toggle" id="correct" src="img/games/royal-game-of-ur/correct_move.png" alt="Correct Move Screenshot" style="display:none;">
+                    <div class="embed-responsive embed-responsive-16by9 ur-toggle" id="video" style="display:none">
+                        <iframe class="embed-responsive-item"  src="https://www.youtube.com/embed/0i5dbWtMu_Y" allowfullscreen></iframe>
+                    </div> 
+                    <hr>
+                    <button type="button" class="btn btn-sm btn-outline-secondary ur-toggler" data-ur-id="#invalid">Invalid Move</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary ur-toggler" data-ur-id="#correct">Correct Move</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary ur-toggler" data-ur-id="#video">Video Demo</button>
                 </div>
             </div>
 
             <hr class="featurette-divider">
 
             <div class="enkindle row featurette">
-                <div class="col-md-8">
+                <div class="col-md-6">
                     <h2 class="featurette-heading">Enkindle
+                        <a href="https://studentgames.itch.io/enkindle"><img src="img/games/enkindle/itch_badge.png" style="max-width: 25%; float:right;"></a>
                         <br>
                         <span class="text-muted">3D Video Game</span>
                     </h2>
                     <p class="lead">Developed and published game to simulate an industry Game Studio environment and workflow.
-                        Collaborated with Game Design course and Polish Art University to manage and visualize gameplay.
-                        Implemented mesh deformation as a tool for Unity’s built-in Terrain system.
-                        <a href="https://studentgames.itch.io/enkindle"><img src="img/games/enkindle/itch_badge.png" style="max-width: 25%;"></a>
+                            Collaborated with Game Design course and Polish Art University to manage and visualize gameplay.
+                            Implemented mesh deformation as a tool for Unity’s built-in Terrain system. Along with a procedural generation system for creating trees and placing them in game. No two playthoughs are alike!
                     </p>
                 </div>
-                <div class="col-md-8">
-                    <img class="featurette-image img-fluid mx-auto" src="img/games/enkindle/phoenix_screenshot.PNG" alt="Enkindle Screenshot">
+                <div class="col-md-6 text-center enkindle-screenshots">
+                    <img class="featurette-image img-fluid mx-auto enkindle-toggle" id="phoenix" src="img/games/enkindle/phoenix_screenshot.png" alt="Enkindle Screenshot">
+                    <img class="featurette-image img-fluid mx-auto enkindle-toggle" id="unity" src="img/games/enkindle/unity_screenshot.png" alt="Unity Screenshot" style="display:none;">
+                    <hr>
+                    <button type="button" class="btn btn-sm btn-outline-secondary enkindle-toggler" data-enkindle-id="#phoenix">Enkindle</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary enkindle-toggler" data-enkindle-id="#unity">Unity</button>
+                </div>
+                
+            </div>
+
+            <hr class="featurette-divider">
+
+            <div class="chess row featurette">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading">Chess
+                        <br>
+                        <span class="text-muted">C++ Console Window</span>
+                    </h2>
+                    <p class="lead">Original Chess game written in C++ using the console window for input/output.
+                        First programming project for a lower level University class.
+                        Although this focused more on software basics, it kickstarted my passion for game programming.
+                    </p>
+                </div>
+                <div class="col-md-5 text-center">
+                    <img class="featurette-image img-fluid mx-auto chess-toggle" id="start" src="img/games/chess/chess_start.png" alt="Chess Screenshots">
+                    <img class="featurette-image img-fluid mx-auto chess-toggle" id="middle" src="img/games/chess/chess_middle.png" alt="Chess Screenshots" style="display:none;">
+                    <img class="featurette-image img-fluid mx-auto chess-toggle" id="end" src="img/games/chess/chess_gameover.png" alt="Chess Screenshots" style="display:none;">
+                    
+                    <button type="button" class="btn btn-sm btn-outline-secondary chess-toggler" data-chess-id="#start">Start</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary chess-toggler" data-chess-id="#middle">During</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary chess-toggler" data-chess-id="#end">Game-Over</button>
                 </div>
             </div>
 
@@ -175,7 +207,7 @@
             <p>&copy; 2018 Ryan Blakeman &middot;
                 <a href="mailto:rblakeman31@gmail.com">Email</a> &middot;
                 <a href="https://www.linkedin.com/in/rblakeman/">LinkedIn</a>
-            <br>Style by Bootstrap</br>
+            <br>Style by Bootstrap
             </p>
         </footer>
     </main>
@@ -194,6 +226,24 @@
         $('.ocean-toggler').click(function(){
             $('.ocean-toggle').hide();
             $($(this).attr('data-ocean-id')).show();
+        })
+    </script>
+    <script>
+            $('.ur-toggler').click(function(){
+                $('.ur-toggle').hide();
+                $($(this).attr('data-ur-id')).show();
+            })
+        </script>
+    <script>
+        $('.enkindle-toggler').click(function(){
+            $('.enkindle-toggle').hide();
+            $($(this).attr('data-enkindle-id')).show();
+        })
+    </script>
+    <script>
+        $('.chess-toggler').click(function(){
+            $('.chess-toggle').hide();
+            $($(this).attr('data-chess-id')).show();
         })
     </script>
 </body>
